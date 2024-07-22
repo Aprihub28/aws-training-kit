@@ -2,7 +2,6 @@
 
 #Change mypassword to your password
 yourpass=$1
-passuy=""
 
 #Mysql Configuration using expect
 expect << EOF
