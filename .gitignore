@@ -1,0 +1,4 @@
+lambda/*.js
+lambda-dynamodb/node_modules
+lambda-dynamodb/*.js
+lambda-dynamodb/*.json
