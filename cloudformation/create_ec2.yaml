@@ -5,9 +5,9 @@ Resources:
   MyEC2Instance:
     Type: 'AWS::EC2::Instance'
     Properties: 
-      KeyName: devops_cisly
+      KeyName: apri_rsa
       InstanceType: 't2.micro'
-      ImageId: 'ami-003932de22c285676' # AMI ID untuk Ubuntu 20.04 LTS di region us-east-2 (Ohio)
+      ImageId: 'ami-001f2488b35ca8aad' # AMI ID untuk Ubuntu 20.04 LTS di region us-east-2 (Ohio)
       SecurityGroupIds:
         - "sg-0aae0298681027b4e"
       BlockDeviceMappings: 
@@ -16,6 +16,6 @@ Resources:
             VolumeSize: '8'
             VolumeType: 'gp2'
       Tags:
-        - Key: Name
+        - Key: Demoec2cloudfront
           Value: 'MyUbuntuEC2'
     DeletionPolicy: Delete
